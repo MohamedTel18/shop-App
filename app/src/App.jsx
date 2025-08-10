@@ -31,10 +31,12 @@ export default function App() {
 
   return(
     <>
-    <Nav cartCount={totalCount} />
-    <Outlet 
-      context={{ cart, addToCart, removeFromCart }}
-    />
-  </>
+      <Nav cartCount={totalCount} />
+      <main className="main-content">
+        <Outlet 
+          context={{ cart, addToCart, removeFromCart }}
+        />
+      </main>
+    </>
   )
 }

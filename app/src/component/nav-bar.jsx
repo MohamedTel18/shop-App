@@ -1,10 +1,11 @@
 import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
+import "../styles/component/nav.css";
 
 export default function Nav({ cartCount })
 {
     return (
-        <nav style={{ display: "flex", gap: "1rem", padding: "1rem" }}>
+        <nav>
             <Link to="/">Home</Link>
             <Link to="/shop">Shop</Link>
             <Link to="/cart">Cart ({cartCount})</Link>

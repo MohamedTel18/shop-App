@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Home from './pages/home.jsx'
 import Cart from './pages/cart.jsx'
 import Shop from './pages/shop.jsx'
+import './styles/global.css'
 
 
 const router = createBrowserRouter([
