@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 
-export default function nav({ cartCount })
+export default function Nav({ cartCount })
 {
     return (
         <nav style={{ display: "flex", gap: "1rem", padding: "1rem" }}>
