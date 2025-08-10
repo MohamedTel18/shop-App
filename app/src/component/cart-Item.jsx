@@ -1,7 +1,7 @@
 import { useState } from "react";
 import propTypes from "prop-types";
 
-export default function CartItem({ product, AddToCart }) {
+export default function CartItem({ product, addToCart }) {
 
     const [quantity, setQuantity] = useState(1);
 
@@ -29,7 +29,7 @@ export default function CartItem({ product, AddToCart }) {
                 </div>
             </div>
             <div className="add-to-cart">
-                <button onClick={() => AddToCart(product, quantity)}>
+                <button onClick={() => addToCart(product, quantity)}>
                     Add to Cart
                 </button>
             </div>
@@ -39,5 +39,5 @@ export default function CartItem({ product, AddToCart }) {
 
 CartItem.propTypes = {
     product: propTypes.object.isRequired,
-    AddToCart: propTypes.func.isRequired,
+    addToCart: propTypes.func.isRequired,
 }

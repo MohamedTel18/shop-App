@@ -12,6 +12,6 @@ export default function Nav({ cartCount })
     )
 }
 
-nav.propTypes = {
+Nav.propTypes = {
     cartCount: PropTypes.number.isRequired
 }

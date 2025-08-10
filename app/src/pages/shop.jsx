@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import CartItem from "../components/CartItem";
+import { useOutletContext } from "react-router-dom";
+import CartItem from "../component/cart-Item";
 
-export default function shop({AddToCart}) {
+export default function Shop() {
+    const { addToCart } = useOutletContext();
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
@@ -18,7 +20,7 @@ export default function shop({AddToCart}) {
             <h2>Shop</h2>
             <div className="product-list">
                 {products.map(product => (
-                    <CartItem key={product.id} product={product} AddToCart={AddToCart} />
+                    <CartItem key={product.id} product={product} addToCart={addToCart} />
                 ))}
             </div>
         </div>

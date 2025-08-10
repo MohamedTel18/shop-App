@@ -1,8 +1,10 @@
 import propTypes from "prop-types";
-import CartSummary from "../components/CartSummary";
+import CartSummary from "../component/cart-summary";
+import { useOutletContext } from "react-router-dom";
 
-export default function Cart({cart, removeFromCart})
+export default function Cart()
 {
+    const { cart, removeFromCart } = useOutletContext();
     return (
         <div className="cart">
             {cart.map(product => (

@@ -1,7 +1,5 @@
 import { useState,useEffect } from 'react'
-import Nav from './components/nav-bar';
-import Cart from './pages/cart';
-import Shop from './pages/shop';
+import Nav from './component/nav-bar';
 import {Outlet} from 'react-router-dom';
 
 export default function App() {
